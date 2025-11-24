@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .dark{
+            background-color: black;
+            color: white;
+        }
+
+        .white{
+            background-color: white;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <button>change mode</button>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus et voluptate ea ipsa cupiditate ullam, fugiat est possimus, atque distinctio odio adipisci porro harum voluptatem, asperiores tempore labore quia temporibus!</p>
+    <script>
+        let btn = document.querySelector("button")
+        let body=document.querySelector("body")
+        let mode = "white"; //dark
+        btn.addEventListener("click", () => {
+            if (mode === "white") {
+                mode="dark"
+                // document.querySelector("body").style.backgroundColor="black"
+                body.classList.add("dark")
+                body.classList.remove("white")
+            }
+            else {
+                mode="white"
+                // document.querySelector("body").style.backgroundColor="white"
+                body.classList.add("white")
+                body.classList.remove("dark")
+            }
+
+            console.log(mode)
+        })
+    </script>
+</body>
+
+</html>

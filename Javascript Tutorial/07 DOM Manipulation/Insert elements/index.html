@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+#box{
+    height: 300px;
+    width: 100px;
+    background-color: aqua;
+    color: white;
+    border: 1px solid black;
+}
+    </style>
+</head>
+
+<body>
+    <div id="box" name="javascript">this is div
+        <ul>list
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+            <li>item 4</li>
+        </ul>
+    </div>
+    <p class="para">this paragraph</p>
+    <script>
+        let bun = document.createElement("button")
+        bun.innerHTML="click me!"
+        console.log(bun)
+
+        let div=document.querySelector("div")
+        // div.append(bun)
+        // div.prepend(bun)
+        // div.before(bun)
+        div.after(bun)
+
+
+        let head = document.createElement("h1")
+        head.innerHTML="<i> hi i am new </i>"
+        document.querySelector("body").prepend(head)
+
+        let para = document.querySelector("p")
+        para.remove()
+ 
+        head.remove()
+    </script>
+</body>
+
+</html>

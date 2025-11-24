@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      class parent {
+        hello() {
+          console.log("hello");
+        }
+      }
+
+      class child extends parent {}
+
+      let obj = new child();
+
+      console.log(obj)
+      console.log(obj.hello())
+    //   console.log(obj.abc())
+
+
+      class person {
+        eat(){
+            console.log("eat")
+        }
+
+        sleep(){
+            console.log("sleep")
+        }
+      }
+
+      class engineer extends person{
+        work(){
+            console.log("probles")
+        }
+      }
+
+
+      
+      class doctor extends person{
+        work(){
+            console.log(" more probles")
+        }
+      }
+
+      let deep =new engineer
+      let deep1 =new doctor
+      console.log(deep.work())
+      console.log(deep.eat())
+      console.log(deep.sleep())
+
+      console.log(deep1.work())
+      console.log(deep1.eat())
+      console.log(deep1.sleep())
+
+
+
+    </script>
+  </body>
+</html>

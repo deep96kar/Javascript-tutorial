@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      class person {
+        constructor() {
+          console.log("enter parent constructor");
+          this.species = "hello species";
+        }
+        eat() {
+          console.log("eat");
+        }
+      }
+
+      class engineer extends person {
+        constructor(branch) {
+          console.log("enter child constructor");
+          super(); // to invoke parent class constructor
+          this.branch = branch;
+          console.log("exit constructor");
+        }
+        work() {
+          console.log("probles");
+        }
+      }
+
+      let deep = new engineer("lab");
+    </script>
+  </body>
+</html>

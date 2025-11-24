@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      class person {
+        constructor(name) {
+          console.log("enter parent constructor");
+          this.species = "hello species";
+          this.name = name;
+        }
+        eat() {
+          console.log("eat");
+        }
+      }
+
+      class engineer extends person {
+        constructor(name) {
+          console.log("enter child constructor");
+          super(name); // to invoke parent class constructor
+        }
+        work() {
+            super.eat()
+          console.log("probles");
+        }
+      }
+
+      
+      let deep = new engineer("deep");
+      console.log(deep.eat())
+    </script>
+  </body>
+</html>
