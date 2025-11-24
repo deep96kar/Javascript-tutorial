@@ -99,6 +99,6 @@ Each chapter contains problem sets to test your understanding and to practice co
 
 1. **Clone the repository** to your local machine using:
    ```sh
-   git clone https://github.com/CodeWithHarry/The-Ultimate-Python-Course.git
+   git clone https://github.com/deep96kar/All-Programming-Languages.git
    ```
 2
